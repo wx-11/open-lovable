@@ -4,16 +4,6 @@ on:
   push:
     branches:
       - my
-  workflow_dispatch:
-    inputs:
-      push_image:
-        description: 'Push image to registry'
-        required: false
-        default: 'true'
-        type: choice
-        options:
-          - 'true'
-          - 'false'
 
 env:
   # 使用GitHub Container Registry
